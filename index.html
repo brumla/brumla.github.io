@@ -2,9 +2,51 @@
 <html>
     <head>
         <title>Brumla Work</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 10.5pt;
+            }
+
+            .project-status {
+                text-transform: capitalize;
+                font-size: x-small;
+                vertical-align: super;
+            }
+
+            #mainTitle {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 3em;
+                text-align: center;
+                background-color: black;
+                color: white;
+            }
+        </style>
     </head>
     <body>
+        <div id="mainTitle">
+            Brumla Work
+        </div>
         Welcome. This page contains links to my open source project.
+        <br/>
+        <ul>
+            <li><a href="https://github.com/brumla/oscillograph">
+                Simple Oscilloscope based on Qt and Arduino
+                </a>
+                <span class="project-status">devel</span>
+            </li>
+            <li><a href="https://github.com/brumla/basicmodbus">
+                Communication tool for MODBUS connected devices like Siemens Simatic via PC COM port,
+                Qt application
+                </a>
+                <span class="project-status">production</span>
+            </li>
+            <li><a href="https://github.com/brumla/BluetoothButton">Android application&mdash;push bluetooth 
+                button to call your favorite contact.
+                </a>
+                <span class="project-status">devel</span>
+            </li>
+        </ul>
         <br/>
         Please use them in peace.
     </body>
