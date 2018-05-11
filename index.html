@@ -34,7 +34,8 @@
             padding: 0px;
         }
 
-        li, #smallTitle {
+        li,
+        #smallTitle {
             display: block;
             padding: 1ch;
             background-color: teal;
@@ -57,12 +58,20 @@
             font-size: xx-small;
             color: teal;
         }
+
+        #cookiesInfo {
+            color: yellowgreen;
+            background-color: black;
+            font-size: 1.2em;
+        }
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
 </head>
 
 <body>
+    <div id="cookiesInfo">
+        <i class="fas fa-info-circle"></i>&nbsp;This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.</div>
     <div id="mainTitle">
         BrumlaWork
     </div>
@@ -106,6 +115,8 @@
     </ul>
 </body>
 
-<footer>&copy; 2018 Brumla</footer>
+<footer>
+    <div>&copy; 2018 Brumla</div>
+</footer>
 
 </html>
