@@ -1,52 +1,104 @@
 <!doctype html>
 <html>
-    <head>
-        <title>BrumlaWork</title>
-        <style>
-            body {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 10.5pt;
-            }
 
-            .project-status {
-                text-transform: capitalize;
-                font-size: x-small;
-                vertical-align: super;
-            }
+<head>
+    <title>BrumlaWork</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10.5pt;
+        }
 
-            #mainTitle {
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 3em;
-                text-align: center;
-                background-color: black;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="mainTitle">
-            BrumlaWork
-        </div>
-        Welcome. This page contains links to my open source project.
-        <br/>
-        <ul>
-            <li><a href="https://github.com/brumla/oscillograph">
+        .project-status {
+            text-transform: capitalize;
+            font-size: x-small;
+            vertical-align: super;
+            cursor: help;
+        }
+
+        #mainTitle {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3em;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 1ch;
+            margin: 0px;
+            border: 0px;
+        }
+
+        ul {
+            display: block;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li, #smallTitle {
+            display: block;
+            padding: 1ch;
+            background-color: teal;
+            color: whitesmoke;
+            margin: 2px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        #smallTitle {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 2ch;
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="mainTitle">
+        BrumlaWork
+    </div>
+    <div id="smallTitle">
+        Following projects are hosted on GitHub
+    </div>
+    <br/>
+    <ul>
+        <li>
+            <a href="https://github.com/brumla/oscillograph">
                 Simple Oscilloscope based on Qt and Arduino
-                </a>
-                <span class="project-status" title="This project is under development">devel</span>
-            </li>
-            <li><a href="https://github.com/brumla/basicmodbus">
-                Communication tool for MODBUS connected devices like Siemens Simatic via PC COM port,
-                Qt application
-                </a>
-                <span class="project-status" title="This project was tested and is production ready">production</span>
-            </li>
-            <li><a href="https://github.com/brumla/BluetoothButton">Bluetooth controlled phone application
-                </a>
-                <span class="project-status" title="This project is under development">devel</span>
-            </li>
-        </ul>
-        <br/>
-        Please use them in peace.
-    </body>
+            </a>
+            <span class="project-status" title="This project is under development">devel</span>
+            <div class="tags">
+                <i class="far fa-window-restore" title="Qt/C++"></i>
+                <i class="fas fa-microchip" title="Arduino"></i>
+                <i class="fab fa-usb" title="USB/Serial"></i>
+            </div>
+        </li>
+        <li>
+            <a href="https://github.com/brumla/basicmodbus">
+                Communication tool for MODBUS connected devices like Siemens Simatic via PC COM port, Qt application
+            </a>
+            <span class="project-status" title="This project was tested and is production ready">production</span>
+            <div class="tags">
+                <i class="far fa-window-restore" title="Qt/C++"></i>
+                <i class="fas fa-microchip" title="Arduino"></i>
+                <i class="fab fa-usb" title="USB/Serial"></i>
+            </div>
+        </li>
+        <li>
+            <a href="https://github.com/brumla/BluetoothButton">Bluetooth controlled phone application
+            </a>
+            <span class="project-status" title="This project is under development">devel</span>
+            <div class="tags">
+                <i class="fab fa-android" title="Android"></i>
+                <i class="fas fa-microchip" title="Arduino"></i>
+                <i class="fab fa-bluetooth-b" title="Bluetooth"></i>
+            </div>
+        </li>
+    </ul>
+</body>
+
 </html>
