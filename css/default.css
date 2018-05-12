@@ -18,6 +18,10 @@ i {
     font-style: normal;
 }
 
+#copyright {
+    color: darkgreen;
+}
+
 #ttyCursor {
     animation: blinker 1s linear infinite;
 }
