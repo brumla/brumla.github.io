@@ -2,188 +2,43 @@
 <html>
 
 <head>
-    <title>BrumlaWork</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 10.5pt;
-        }
-
-        .project-status {
-            text-transform: capitalize;
-            font-size: x-small;
-            vertical-align: super;
-            cursor: help;
-        }
-
-        #mainTitle {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 2em;
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 1ch;
-            margin: 0px;
-            border: 0px;
-        }
-
-        ul {
-            display: block;
-            border: 0px;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        li,
-        #smallTitle {
-            display: block;
-            padding: 1ch;
-            background-color: teal;
-            color: whitesmoke;
-            margin: 6px;
-        }
-
-        li a {
-            text-decoration: none;
-            color: whitesmoke;
-        }
-
-        #smallTitle {
-            font-size: 1.1em;
-            margin-top: 2ch;
-        }
-
-        footer {
-            font-size: xx-small;
-            color: teal;
-            display: block;
-            position: absolute;
-            left: 0px;
-            bottom: 4em;
-        }
-
-        #cookiesInfo {
-            color: whitesmoke;
-            background-color: teal;
-            font-size: 1.2em;
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-            display: inline;
-        }
-
-        .card-small {
-            width: 200px;
-            height: 200px;
-        }
-
-        .card-bk {
-            background-color: teal;
-            color: whitesmoke;
-            font-size: large;
-        }
-    </style>
+    <script src="js/welcome.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
-    <script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
 
 <body>
-    <div id="cookiesInfo">
-        <i class="fas fa-info-circle"></i>&nbsp;This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.</div>
-    <div id="smallTitle" class="mdc-card">
-        <b>Welcome to my GitHub repository.</b>
-        <br/> Here is list of my current open-source projects:
+    <div id="welcome">
+        Welcome to my GitHub repository.
+        <br/>
+        <br/> <i>** This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies. **</i>
+        <br/>
+        <br/> Following projects are available for
+        <em>git clone</em>:
+        <br/>
+        <a href="https://github.com/brumla/basicmodbus" target="_blank">[1]</a> BasicModbus
+        <i class="fas fa-microchip" title="Requires Arduino"></i>
+        <i class="fab fa-usb" title="Requires USB"></i>
+        <i class="fab fa-windows" title="Runs on Windows"></i>
+        <i class="fab fa-linux" title="Runs on Linux"></i>
+        <br/>
+        <a href="https://github.com/brumla/BluetoothButton" target="_blank">[2]</a> Bluetooth Button
+        <i class="fab fa-android" title="Runs on Android only"></i>
+        <i class="fas fa-microchip" title="Requires Arduino"></i>
+        <i class="fab fa-bluetooth-b" title="Uses bluetooth"></i>
+        <i class="fab fa-windows" title="Runs on Windows"></i>
+        <i class="fab fa-linux" title="Runs on Linux"></i>
+        <br/>
+        <a href="https://github.com/brumla/oscillograph" target="_blank">[3]</a> Oscillograph
+        <i class="fas fa-microchip" title="Requires Arduino"></i>
+        <i class="fab fa-usb" title="Requires USB"></i>
+        <i class="fab fa-windows" title="Runs on Windows"></i>
+        <i class="fab fa-linux" title="Runs on Linux"></i>
+        <br/>
+        <br/> Please, use them in peace. All the project are open source.
+        <span id="ttyCursor" style="background-color: greenyellow">&nbsp;</span>
     </div>
-    <br/>
-
-    <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
-                <div class="card-bk mdc-card__media mdc-card__media--square">
-                    <div class="mdc-card__media-content">
-                        <h1>Oscillograph</h1>
-                        <p>
-                            Simple oscilloscope created using Arduino UNO and Qt library. The Arduino simply measures the voltage on analog inputs and
-                            sends them via serial port to local PC.
-                        </p>
-                        <p>
-                            Qt based application reads the serial data and displays the measured value in same way as the oscilloscope does.
-                        </p>
-                    </div>
-                    <h6>New</h6>
-                </div>
-                <div class="mdc-card__actions">
-                    <div class="mdc-card__action-buttons">
-                        <a href="https://github.com/brumla/oscillograph" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
-                    </div>
-                    <div class="mdc-card__action-icons">
-                        <i class="far fa-window-restore" title="Qt/C++"></i>
-                        <i class="fas fa-microchip" title="Arduino"></i>
-                        <i class="fab fa-usb" title="USB/Serial"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
-                <div class="card-bk mdc-card__media mdc-card__media--square">
-                    <div class="mdc-card__media-content">
-                        <h1>BluetoothButton</h1>
-                        <p>Use the button(s) connected to Arduino to execute various actions on your mobile phone</p>
-                        <p>This tool was first created for disabled persons to be able to run the phone actions using only the
-                            button</p>
-                    </div>
-                    <h6>Development</h6>
-                </div>
-                <div class="mdc-card__actions">
-                    <div class="mdc-card__action-buttons">
-                        <a href="https://github.com/brumla/BluetoothButton" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
-                    </div>
-                    <div class="mdc-card__action-icons">
-                        <i class="fab fa-android" title="Android"></i>
-                        <i class="fas fa-microchip" title="Arduino"></i>
-                        <i class="fab fa-bluetooth-b" title="Bluetooth"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
-                <div class="card-bk mdc-card__media mdc-card__media--square">
-                    <div class="mdc-card__media-content">
-                        <h1>BasicModbus</h1>
-                        <p>Tool for sending and receiving data to/from MODBUS connected device</p>
-                        <p>Supports both binary and ASCII data transfer</p>
-                    </div>
-                    <h6>Production ready</h6>
-                </div>
-                <div class="mdc-card__actions">
-                    <div class="mdc-card__action-buttons">
-                        <a href="https://github.com/brumla/basicmodbus" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
-                    </div>
-                    <div class="mdc-card__action-icons">
-                        <i class="far fa-window-restore" title="Qt/C++"></i>
-                        <i class="fab fa-usb" title="USB/Serial"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <footer>
-        <div>&copy; 2018 Brumla. This site is using
-            <a href="https://material.io" target="_blank">Material Design&nbsp;
-                <i class="fas fa-external-link-alt"></i>
-            </a>. Hosted on
-            <a href="https://github.com" target="_blank">GitHub&nbsp;
-                <i class="fas fa-external-link-alt"></i>
-            </a>. Site is using font
-            <a href="https://fontawesome.com" target="_blank">Awesome&nbsp;
-                <i class="fas fa-external-link-alt"></i>
-            </a>.
-        </div>
-    </footer>
+</body>
 
 </html>

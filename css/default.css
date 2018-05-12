@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: greenyellow;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', Courier, monospace
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+i {
+    color: lightblue;
+    font-style: normal;
+}
+
+#ttyCursor {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
