@@ -56,6 +56,10 @@
         footer {
             font-size: xx-small;
             color: teal;
+            display: block;
+            position: absolute;
+            left: 0px;
+            bottom: 4em;
         }
 
         #cookiesInfo {
@@ -64,7 +68,18 @@
             font-size: 1.2em;
             position: absolute;
             bottom: 0px;
+            right: 0px;
             display: inline;
+        }
+
+        .card-small {
+            width: 200px;
+            height: 200px;
+        }
+
+        .card-bk {
+            background-color: teal;
+            color: whitesmoke;
         }
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
@@ -81,54 +96,75 @@
         <br/> Here is list of my current open-source projects:
     </div>
     <br/>
-    <ul>
-        <li class="mdc-elevation--z4">
-            <a href="https://github.com/brumla/oscillograph">
-                Simple Oscilloscope based on Qt and Arduino
-            </a>
-            <span class="project-status" title="This project is under development">devel</span>
-            <div class="tags">
-                <i class="far fa-window-restore" title="Qt/C++"></i>
-                <i class="fas fa-microchip" title="Arduino"></i>
-                <i class="fab fa-usb" title="USB/Serial"></i>
-            </div>
-        </li>
-        <li class="mdc-elevation--z4">
-            <a href="https://github.com/brumla/basicmodbus">
-                Communication tool for MODBUS connected devices like Siemens Simatic via PC COM port, Qt application
-            </a>
-            <span class="project-status" title="This project was tested and is production ready">production</span>
-            <div class="tags">
-                <i class="far fa-window-restore" title="Qt/C++"></i>
-                <i class="fas fa-microchip" title="Arduino"></i>
-                <i class="fab fa-usb" title="USB/Serial"></i>
-            </div>
-        </li>
-        <li class="mdc-elevation--z4">
-            <a href="https://github.com/brumla/BluetoothButton">Bluetooth controlled phone application
-            </a>
-            <span class="project-status" title="This project is under development, currently on-hold">on-hold</span>
-            <div class="tags">
-                <i class="fab fa-android" title="Android"></i>
-                <i class="fas fa-microchip" title="Arduino"></i>
-                <i class="fab fa-bluetooth-b" title="Bluetooth"></i>
-            </div>
-        </li>
-    </ul>
-</body>
 
-<footer>
-    <div>&copy; 2018 Brumla. This site is using
-        <a href="https://material.io" target="_blank">Material Design&nbsp;
-            <i class="fas fa-external-link-alt"></i>
-        </a>. Hosted on
-        <a href="https://github.com" target="_blank">GitHub&nbsp;
-            <i class="fas fa-external-link-alt"></i>
-        </a>. Site is using font
-        <a href="https://fontawesome.com" target="_blank">Awesome&nbsp;
-            <i class="fas fa-external-link-alt"></i>
-        </a>.
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
+                <div class="card-bk mdc-card__media mdc-card__media--square">
+                    <div class="mdc-card__media-content">Oscillograph</div>
+                </div>
+                <!-- ... content ... -->
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://github.com/brumla/oscillograph" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
+                    </div>
+                    <div class="mdc-card__action-icons">
+                        <i class="far fa-window-restore" title="Qt/C++"></i>
+                        <i class="fas fa-microchip" title="Arduino"></i>
+                        <i class="fab fa-usb" title="USB/Serial"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
+                <div class="card-bk mdc-card__media mdc-card__media--square">
+                    <div class="mdc-card__media-content">BluetoothButton</div>
+                </div>
+                <!-- ... content ... -->
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://github.com/brumla/BluetoothButton" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
+                    </div>
+                    <div class="mdc-card__action-icons">
+                        <i class="fab fa-android" title="Android"></i>
+                        <i class="fas fa-microchip" title="Arduino"></i>
+                        <i class="fab fa-bluetooth-b" title="Bluetooth"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
+                <div class="card-bk mdc-card__media mdc-card__media--square">
+                    <div class="mdc-card__media-content">BasicModbus</div>
+                </div>
+                <!-- ... content ... -->
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://github.com/brumla/basicmodbus" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
+                    </div>
+                    <div class="mdc-card__action-icons">
+                        <i class="far fa-window-restore" title="Qt/C++"></i>
+                        <i class="fab fa-usb" title="USB/Serial"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-</footer>
+
+    <footer>
+        <div>&copy; 2018 Brumla. This site is using
+            <a href="https://material.io" target="_blank">Material Design&nbsp;
+                <i class="fas fa-external-link-alt"></i>
+            </a>. Hosted on
+            <a href="https://github.com" target="_blank">GitHub&nbsp;
+                <i class="fas fa-external-link-alt"></i>
+            </a>. Site is using font
+            <a href="https://fontawesome.com" target="_blank">Awesome&nbsp;
+                <i class="fas fa-external-link-alt"></i>
+            </a>.
+        </div>
+    </footer>
 
 </html>
