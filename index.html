@@ -80,6 +80,7 @@
         .card-bk {
             background-color: teal;
             color: whitesmoke;
+            font-size: large;
         }
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
@@ -101,9 +102,17 @@
         <div class="mdc-layout-grid__inner">
             <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
                 <div class="card-bk mdc-card__media mdc-card__media--square">
-                    <div class="mdc-card__media-content">Oscillograph</div>
+                    <div class="mdc-card__media-content">
+                        <h1>Oscillograph</h1>
+                        <p>
+                            Simple oscilloscope created using Arduino UNO and Qt library. The Arduino simply measures the voltage on analog inputs and
+                            sends them via serial port to local PC.
+                        </p>
+                        <p>
+                            Qt based application reads the serial data and displays the measured value in same way as the oscilloscope does.
+                        </p>
+                    </div>
                 </div>
-                <!-- ... content ... -->
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-buttons">
                         <a href="https://github.com/brumla/oscillograph" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
@@ -118,9 +127,13 @@
 
             <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
                 <div class="card-bk mdc-card__media mdc-card__media--square">
-                    <div class="mdc-card__media-content">BluetoothButton</div>
+                    <div class="mdc-card__media-content">
+                        <h1>BluetoothButton</h1>
+                        <p>Use the button(s) connected to Arduino to execute various actions on your mobile phone</p>
+                        <p>This tool was first created for disabled persons to be able to run the phone actions using only the
+                            button</p>
+                    </div>
                 </div>
-                <!-- ... content ... -->
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-buttons">
                         <a href="https://github.com/brumla/BluetoothButton" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
@@ -135,9 +148,12 @@
 
             <div class="mdc-layout-grid__cell mdc-card mdl-cell--6-col card-small">
                 <div class="card-bk mdc-card__media mdc-card__media--square">
-                    <div class="mdc-card__media-content">BasicModbus</div>
+                    <div class="mdc-card__media-content">
+                        <h1>BasicModbus</h1>
+                        <p>Tool for sending and receiving data to/from MODBUS connected device</p>
+                        <p>Supports both binary and ASCII data transfer</p>
+                    </div>
                 </div>
-                <!-- ... content ... -->
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-buttons">
                         <a href="https://github.com/brumla/basicmodbus" class="mdc-button mdc-card__action mdc-card__action--button">Go to GitHub</a>
